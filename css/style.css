@@ -1,0 +1,204 @@
+@font-face{
+  font-family: Squealer;
+  src: url(../font/squealer.ttf);
+}
+
+body{
+  background: url('../img/dust_scratches.png');
+  font-family: 'Open Sans';
+  color: #3F3F3F;
+}
+
+a{
+  text-decoration: none;
+  color: crimson;
+}
+#image{
+  max-width: 80%;
+  display: block;
+  height: auto;
+  margin: auto;
+  box-shadow: 0 1px 2px 0 rgb(51, 51, 51);
+}
+
+#main{
+  width: 100%;
+  min-height: 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 100px;
+  grid-gap: 10px;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+  justify-items: center;
+}
+
+header{
+  /* background: cornflowerblue; */
+  grid-area: header;
+}
+
+
+#title{
+  font-family: 'Squealer';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 7em;
+  letter-spacing: 8px;
+  width: 100%;
+  height: 120px;
+  background: grey;
+  box-shadow: 0 1px 2px 0 rgb(51, 51, 51);
+  color: black;
+}
+
+
+h3{
+  font-weight: 300;
+}
+
+#img-caption{
+  max-width: 90%;
+  text-align: right;
+  font-style: italic;
+}
+
+main{
+  width: 80%;
+}
+
+section{
+  /* background: #9292d8; */
+  grid-area: main;
+  margin: 0 20px;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+#info-title{
+  text-align: center;
+  font-size: 3em;
+}
+
+#tribute-item{
+  display: grid;
+  grid-template-columns:  auto 4fr;
+  grid-gap: 15px;
+  /* grid-template-rows: auto auto; */
+}
+
+#tribute-item figure{
+  margin-right: 0;
+  justify-self: center;
+  
+}
+
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  min-width: 200px;
+  box-shadow: 0 1px 2px 0 rgb(51, 51, 51);
+  /* border: 5px solid white; */
+}
+.item-span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5em;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  border: 5px solid transparent;
+  min-height: 200px;
+  min-width: 200px;
+  background: rgb(0,0,0,0.4);
+  
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+
+  margin: 0;
+  background: white;
+  /* height: 200px; */
+  padding: 0 20px;
+  box-shadow: 0 1px 2px 0 rgb(66, 66, 66);
+}
+
+.info-span{
+  font-weight: bold;
+  color: crimson;
+}
+footer{
+  /* background: blueviolet; */
+  grid-area: footer;
+  text-align: center;
+}
+
+#footer-message{
+  text-align: center;
+}
+
+#item1{
+  background: url('https://images-na.ssl-images-amazon.com/images/I/311dYEnMpjL._SL160_.jpg')no-repeat center;
+  background-size: cover;
+}
+#item2{
+  background: url('https://images-na.ssl-images-amazon.com/images/I/61ejfeTJdyL._SL160_.jpg')no-repeat center;
+  background-size: cover;
+}
+#item3{
+  background: url('https://images-na.ssl-images-amazon.com/images/I/517zHfCBpvL._SL160_.jpg')no-repeat center;
+  background-size: cover;
+}
+#item4{
+  background: url('https://images-na.ssl-images-amazon.com/images/I/61kaLXCXVbL._SL160_.jpg')no-repeat center;
+  background-size: cover;
+}
+#item5{
+  background: url('https://images-na.ssl-images-amazon.com/images/I/513uIe3DwjL._SL160_.jpg')no-repeat center;
+  background-size: cover;
+}
+#item6{
+  background: url('https://images-na.ssl-images-amazon.com/images/I/51E%2BIuM5f4L._SL160_.jpg')no-repeat center;
+  background-size: cover;
+}
+#item7{
+  background: url('https://images-na.ssl-images-amazon.com/images/I/51k0nhRKJBL._SL160_.jpg')no-repeat center;
+  background-size: cover;
+}
+#item8{
+  background: url('https://images-na.ssl-images-amazon.com/images/I/41h0HQuZUqL._SL160_.jpg')no-repeat center;
+  background-size: cover;
+}
+#item9{
+  background: url('https://images-na.ssl-images-amazon.com/images/I/51njZcxRR3L._SL160_.jpg')no-repeat center;
+  background-size: cover;
+}
+#item10{
+  background: url('https://images-na.ssl-images-amazon.com/images/I/51kBA13FDIL._SL160_.jpg')no-repeat center;
+  background-size: cover;
+}
+
+#item1:hover{
+  /* opacity: 0.9; */
+  /* border: 2px solid red; */
+}
+
+
+.item-span:hover{
+  background: rgb(0,0,0,0.6);
+  transition: 1s;
+  border: 5px solid white;
+}
